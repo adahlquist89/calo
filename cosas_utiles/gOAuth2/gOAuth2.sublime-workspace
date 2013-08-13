@@ -1,0 +1,498 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"g",
+				"gOAuth2"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"goog",
+				"google-oauth2"
+			],
+			[
+				"HTTP",
+				"HttpResponseRedirect"
+			],
+			[
+				"HT",
+				"HttpResponse"
+			],
+			[
+				"User",
+				"UserCreationForm"
+			],
+			[
+				"form",
+				"form_cd"
+			],
+			[
+				"Http",
+				"HttpResponse"
+			],
+			[
+				"H",
+				"HttpResponseRedirect"
+			],
+			[
+				"IDLE",
+				"IDLE_TASK"
+			],
+			[
+				"levl",
+				"level_currently_running"
+			],
+			[
+				"level",
+				"level_currently_running"
+			],
+			[
+				"rem",
+				"remaining_tasks"
+			],
+			[
+				"expired",
+				"expired_queue"
+			],
+			[
+				"task",
+				"tasks_info"
+			],
+			[
+				"CURREn",
+				"current_level"
+			],
+			[
+				"remaining_",
+				"remaining_priority_level_quantums"
+			],
+			[
+				"remain",
+				"remaining_tsk_qtm"
+			],
+			[
+				"remai",
+				"remaining_tasks"
+			],
+			[
+				"ID",
+				"IDLE_TASK"
+			],
+			[
+				"prio",
+				"priority_active_queues"
+			],
+			[
+				"acum",
+				"acum_level_quantum"
+			],
+			[
+				"rema",
+				"remaining_rr_quantum"
+			],
+			[
+				"max",
+				"max_lvl_qtm"
+			],
+			[
+				"curre",
+				"current_level"
+			],
+			[
+				"remian",
+				"remaining_priority_level_quantums"
+			],
+			[
+				"current",
+				"current_level"
+			],
+			[
+				"remaining",
+				"remaining_lvl_qtm"
+			],
+			[
+				"remainin",
+				"remaining_tsk_qtm"
+			],
+			[
+				"cur",
+				"current_level"
+			],
+			[
+				"remi",
+				"remaining_rr_quantum"
+			],
+			[
+				"tas",
+				"tasks_info"
+			],
+			[
+				"ac",
+				"act_lvl"
+			],
+			[
+				"actual",
+				"actual_level"
+			],
+			[
+				"que",
+				"queued"
+			],
+			[
+				"priori",
+				"priority_levels"
+			],
+			[
+				"uso",
+				"uso_CPU"
+			],
+			[
+				"tick",
+				"ticks_bloqueo"
+			],
+			[
+				"tic",
+				"ticks_bloqueo"
+			],
+			[
+				"ti",
+				"ticks_bloqueo"
+			],
+			[
+				"total",
+				"total_cpu"
+			],
+			[
+				"cant",
+				"cant_bloqueos"
+			],
+			[
+				"cat",
+				"cant_bloqueos"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gOAuth2/settings.py",
+			"settings":
+			{
+				"buffer_size": 6417,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gOAuth2/urls.py",
+			"settings":
+			{
+				"buffer_size": 962,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/login.html",
+			"settings":
+			{
+				"buffer_size": 239,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/secrets.html",
+			"settings":
+			{
+				"buffer_size": 112,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/users/templates/registration/registration.html",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/Calo/urls.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/Calo/settings.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/polls/models.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/polls/urls.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/polls/templates/polls/search_results.html",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/polls/templates/polls/search.html",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/polls/views.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/users/urls.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/users/templates/login_page.html",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/users/templates/registration/login.html",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/users/views.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/users/forms.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/polls/forms.py",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/users/templates/registration.html",
+		"/home/darkf0e/ProgramacionWeb/PythonDjango/Calo/users/models.py",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/staircase.cpp",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/staircase.h",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/Makefile",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/graphsched.py",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/ejercicio2.tsk",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/main.cpp",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/ejercicio7.tsk",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/tasks.cpp",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/sched_rr.cpp",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/sched_rr.h",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/sched_fcfs.h",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/simu.cpp",
+		"/home/darkf0e/Facultad/Sistemas/TPs/TP1/src/sched_fcfs.cpp",
+		"/home/darkf0e/ProgramacionWeb/Packtpub.PHP.5.Social.Networking.Oct.2010/tests.html",
+		"/opt/lampp/htdocs/LoginRegister/includes/aside.php",
+		"/opt/lampp/htdocs/LoginRegister/includes/menu.php",
+		"/opt/lampp/htdocs/LoginRegister/includes/header.php",
+		"/opt/lampp/htdocs/CaloCommunity/includes/head.php",
+		"/opt/lampp/htdocs/CaloCommunity/css/screen.css",
+		"/opt/lampp/htdocs/CaloCommunity/index.php",
+		"/opt/lampp/htdocs/CaloCommunity/includes/overall/footer.php",
+		"/opt/lampp/htdocs/CaloCommunity/includes/footer.php",
+		"/opt/lampp/htdocs/CaloCommunity/includes/overall/header.php",
+		"/opt/lampp/htdocs/CaloCommunity/includes/header.php",
+		"/opt/lampp/htdocs/LoginRegister/includes/overall/header.php",
+		"/opt/lampp/htdocs/LoginRegister/index.php",
+		"/opt/lampp/htdocs/LoginRegister/includes/head.php",
+		"/opt/lampp/htdocs/LoginRegister/core/database/connect.php",
+		"/opt/lampp/htdocs/LoginRegister/core/init.php",
+		"/opt/lampp/htdocs/LoginRegister/includes/overall/footer.php",
+		"/opt/lampp/htdocs/LoginRegister/includes/footer.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cout",
+			"create",
+			"salt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cerr"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gOAuth2/settings.py",
+					"settings":
+					{
+						"buffer_size": 6417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5434,
+								5434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2057.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gOAuth2/urls.py",
+					"settings":
+					{
+						"buffer_size": 962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/login.html",
+					"settings":
+					{
+						"buffer_size": 239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/secrets.html",
+					"settings":
+					{
+						"buffer_size": 112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 205.0,
+	"status_bar_visible": true
+}
