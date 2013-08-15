@@ -17,4 +17,9 @@ Como usarlo:
 
 ir a http://127.0.0.1:8000 para ver el sitio
 
+IMPORTANTE:
+============
+la autentificación con Google, facebook, etc, no va a andar si lo corremos desde localhost. Hay que correrle en un servidor o algo. 
+Investigar Google AppEngine para hacer las pruebas.
+
 
