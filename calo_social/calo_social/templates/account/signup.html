@@ -1,0 +1,17 @@
+{% extends "site_base.html" %}
+
+{% load bootstrap_tags %}
+
+{% block head_title %}Login / Signup{% endblock %}
+
+{% block body %}
+    <p>
+        <a class="btn btn-primary" href="{% url "socialauth_begin" "google-oauth2" %}" target="_top">Sign in with <b>Google</b></a>
+    </p>
+    <p>
+        <a class="btn btn-primary" href="{% url "socialauth_begin" "facebook" %}" target="_top">Sign in with <b>Facebook</b></a>
+    </p>
+    <p>
+        <a class="btn btn-primary" href="{% url "socialauth_begin" "twitter" %}" target="_top">Sign in with <b>Twitter</b></a>
+    </p>
+{% endblock %}
