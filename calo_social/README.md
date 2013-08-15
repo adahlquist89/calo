@@ -9,7 +9,9 @@ Como usarlo:
     $ virtualenv socialenv
     //activarlo:
     $ source mysite/bin/activate
-    (socialenv)$ cd calo-social
+    //creo el proyecto
+    (socialenv)$ django-admin startproject --template=calo_social social
+    (socialenv)$ cd social
     //instalar los requerimientos (instala apps necesarias y Django)
     (socialenv)$ pip install -r requirements.txt
     (socialenv)$ python manage.py syncdb
