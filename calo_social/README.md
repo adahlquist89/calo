@@ -5,17 +5,16 @@ usa el pinax-social-project
 
 Como usarlo:
 =============
+	//entrar a directorio del repo
 	//crear un env para instalar las cosas:
-    $ virtualenv socialenv
+    dir_repo$ virtualenv socialenv
     //activarlo:
-    $ source mysite/bin/activate
-    //creo el proyecto
-    (socialenv)$ django-admin startproject --template=calo_social social
-    (socialenv)$ cd social
+    dir_repo$ source socialenv/bin/activate
+    (socialenv)$ cd calo_social
     //instalar los requerimientos (instala apps necesarias y Django)
-    (socialenv)$ pip install -r requirements.txt
-    (socialenv)$ python manage.py syncdb
-    (socialenv)$ python manage.py runserver
+    (socialenv)dir_repo/calo_social$ pip install -r requirements.txt
+    (socialenv)dir_repo/calo_social$ python manage.py syncdb
+    (socialenv)dir_repo/calo_social$ python manage.py runserver
 
 ir a http://127.0.0.1:8000 para ver el sitio
 
