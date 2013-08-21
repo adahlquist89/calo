@@ -140,11 +140,14 @@ INSTALLED_APPS = [
     "metron",
     "social_auth",
     "djcelery",
+    "kaleo",
+    "friendship",
     
     # project
     "calo_social",
     "calo_social.friends",
     "calo_social.profiles",
+    "gunicorn",
 ]
 
 # A sample logging configuration. The only tangible logging
@@ -199,6 +202,7 @@ LOGIN_REDIRECT_URL = reverse_lazy("home")
 LOGIN_ERROR_URL = "/account/social/connections/"
 
 AUTHENTICATION_BACKENDS = [
+    "account.auth_backends.UsernameAuthenticationBackend",
     "social_auth.backends.twitter.TwitterBackend",
     "social_auth.backends.facebook.FacebookBackend",
     "social_auth.backends.google.GoogleOAuth2Backend",

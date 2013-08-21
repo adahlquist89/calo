@@ -29,8 +29,9 @@
     </p>
     
     {% if user.is_authenticated %}
-        {% url "what_next" as what_next_url %}
-        <p class="what_next">{% blocktrans %}Wondering <a href="{{ what_next_url }}" class="btn primary large">What Next</a>?{% endblocktrans %}</p>
+        {% url "invitar_amigo" as invitar_amigo_url %}
+        <p class="what_next">{% blocktrans %}Wondering <a href="{{ invitar_amigo_url }}" class="btn primary large">Invitar Amigo</a>
+        ?{% endblocktrans %}</p>
     {% else %}
         {% url "account_login" as login_url %}
         {% url "account_signup" as signup_url %}

@@ -1,0 +1,10 @@
+{% load kaleo_tags %}
+
+<div class="invites">
+    {% invite_form request.user %}
+
+    <div class="sent">
+        <h3>Invitations Sent</h3>
+        {% invites_sent request.user %}
+    </div>
+</div>
