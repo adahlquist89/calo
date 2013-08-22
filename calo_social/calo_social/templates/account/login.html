@@ -27,14 +27,10 @@
         </div>
     </div>
 
-    <legend>{% trans "O te podés loguear con tu usario de las siguientes redes sociales:" %} </legend>
+    <legend>{% trans "O te podés loguear con tu usuario de las siguientes redes sociales:" %} </legend>
         <p>
         <a class="btn btn-primary" href="{% url "socialauth_begin" "google-oauth2" %}" target="_top">Sign in with <b>Google</b></a>
-    </p>
-    <p>
         <a class="btn btn-primary" href="{% url "socialauth_begin" "facebook" %}" target="_top">Sign in with <b>Facebook</b></a>
-    </p>
-    <p>
         <a class="btn btn-primary" href="{% url "socialauth_begin" "twitter" %}" target="_top">Sign in with <b>Twitter</b></a>
     </p>
 

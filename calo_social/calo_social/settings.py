@@ -142,12 +142,12 @@ INSTALLED_APPS = [
     "djcelery",
     "kaleo",
     "friendship",
+    "south",
     
     # project
     "calo_social",
     "calo_social.friends",
     "calo_social.profiles",
-    "gunicorn",
 ]
 
 # A sample logging configuration. The only tangible logging

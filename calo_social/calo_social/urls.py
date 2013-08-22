@@ -14,11 +14,11 @@ urlpatterns = patterns(
     url(r"^friends/", include("calo_social.friends.urls")),
 
     
-    # url(
-    #     r"^account/social/connections/$",
-    #     TemplateView.as_view(template_name="account/connections.html"),
-    #     name="account_social_connections"
-    # ),
+    url(
+        r"^account/social/connections/$",
+        TemplateView.as_view(template_name="account/connections.html"),
+        name="account_social_connections"
+    ),
     url(r"^account/social/", include("social_auth.urls")),
     # url(
     #     r"^account/login/$",
