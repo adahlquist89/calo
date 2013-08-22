@@ -142,7 +142,6 @@ INSTALLED_APPS = [
     "djcelery",
     "kaleo",
     "friendship",
-    "south",
     
     # project
     "calo_social",
