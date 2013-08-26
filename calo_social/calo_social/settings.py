@@ -140,8 +140,9 @@ INSTALLED_APPS = [
     "metron",
     "social_auth",
     "djcelery",
-    "kaleo",
-    "friendship",
+    "south", #para manejar migraciones de db
+    # "kaleo",
+    # "friendship",
     
     # project
     "calo_social",

@@ -8,4 +8,4 @@ twitter==1.9.4
 requests==1.2.3
 django-celery==3.0.17
 redis==2.7.5
-
+South
