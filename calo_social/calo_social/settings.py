@@ -120,8 +120,8 @@ WSGI_APPLICATION = "calo_social.wsgi.application"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
-]
 
+]
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
