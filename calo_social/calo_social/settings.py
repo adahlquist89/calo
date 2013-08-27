@@ -142,7 +142,7 @@ INSTALLED_APPS = [
     "djcelery",
     "south", #para manejar migraciones de db
     # "kaleo",
-    # "friendship",
+    "friendship",
     
     # project
     "calo_social",
