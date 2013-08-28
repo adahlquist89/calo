@@ -1,6 +1,24 @@
 calo
 ====
 
+Dónde estamos parados:
+======================
+
+Logré hacer que funcione la conexión con oAuth2 de google, el ejemplo lo subí
+en la carpeta AllAuth-Ejemplo. 
+
+Entonces, tenemos:
+
+-Login, Signup con usuario y diferentes redes sociales
+-Base de profile de usuario, hay que agregarle los campos.
+
+
+Próximos pasos:
+-Terminar Profile de usuario
+-Agregar interacción entre usuarios con por ejemplo django-friendship
+-Agregar modelo de Tarjeta Calo
+
+
 Ideas y apps para usar:
 =======================
 
