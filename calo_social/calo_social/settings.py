@@ -139,6 +139,7 @@ INSTALLED_APPS = [
     "account",
     "metron",
     "social_auth",
+    "socialprofile",
     "djcelery",
     "south", #para manejar migraciones de db
     # "kaleo",
@@ -195,19 +196,31 @@ ACCOUNT_LOGIN_REDIRECT_URL = "home"
 ACCOUNT_LOGOUT_REDIRECT_URL = "home"
 ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = True
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
-LOGIN_URL = reverse_lazy("account_login_signup")
-LOGIN_REDIRECT_URL = reverse_lazy("home")
+# LOGIN_URL = reverse_lazy("account_login_signup")
+# LOGIN_REDIRECT_URL = reverse_lazy("home")
 
-# Social Auth
+# # Social Auth
 
-LOGIN_ERROR_URL = "/account/social/connections/"
+# LOGIN_ERROR_URL = "/account/social/connections/"
+# Core Authentication Settings
+LOGIN_URL          = '/socialprofile/select/'
+LOGIN_REDIRECT_URL = '/secure/'
+LOGIN_ERROR_URL    = '/socialprofile/select/'
+
 
 AUTHENTICATION_BACKENDS = [
+	"django.contrib.auth.backends.ModelBackend",
     "account.auth_backends.UsernameAuthenticationBackend",
     "social_auth.backends.twitter.TwitterBackend",
     "social_auth.backends.facebook.FacebookBackend",
     "social_auth.backends.google.GoogleOAuth2Backend",
 ]
+
+# Social Authentication (django-socialauth) Settings
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/secure/'
+SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/secure/'
+SOCIAL_AUTH_NEW_ASSOCIATION_REDIRECT_URL = '/secure/'
+
 
 SOCIAL_AUTH_ASSOCIATE_BY_MAIL = False
 
@@ -224,8 +237,8 @@ SOCIAL_AUTH_PIPELINE = [
     "calo_social.pipeline.import_friends"
 ]
 
-GOOGLE_OAUTH2_CLIENT_ID = os.environ.get("GOOGLE_OAUTH2_CLIENT_ID", "")
-GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get("GOOGLE_OAUTH2_CLIENT_SECRET", "")
+GOOGLE_OAUTH2_CLIENT_ID = os.environ.get("GOOGLE_OAUTH2_CLIENT_ID", "111503697837.apps.googleusercontent.com")
+GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get("GOOGLE_OAUTH2_CLIENT_SECRET", "YCBn-aSccXe8PUxW-ABOCLL5")
 
 TWITTER_CONSUMER_KEY = os.environ.get("TWITTER_CONSUMER_KEY", "")
 TWITTER_CONSUMER_SECRET = os.environ.get("TWITTER_CONSUMER_SECRET", "")
