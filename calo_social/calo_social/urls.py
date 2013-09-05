@@ -36,8 +36,7 @@ urlpatterns = patterns(
         TemplateView.as_view(template_name="account/signup_auth.html"),
         name="auth_signup"
     ),
-    #Social Profiles:
-    url(r'^socialprofile/', include('socialprofile.urls')),
+    url(r"^profile/", include("calo_social.profile.urls")),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

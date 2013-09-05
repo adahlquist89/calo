@@ -139,16 +139,16 @@ INSTALLED_APPS = [
     "account",
     "metron",
     "social_auth",
-    "socialprofile",
+    # "socialprofile",
     "djcelery",
-    "south", #para manejar migraciones de db
+    # "south", #para manejar migraciones de db
     # "kaleo",
-    "friendship",
+    # "friendship",
     
     # project
     "calo_social",
     "calo_social.friends",
-    "calo_social.profiles",
+    "calo_social.profile",
 ]
 
 # A sample logging configuration. The only tangible logging
@@ -192,34 +192,42 @@ ACCOUNT_REQUIRED_EMAIL = True
 ACCOUNT_EMAIL_VERIFICATION = True
 ACCOUNT_EMAIL_AUTHENTICATION = True
 ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
-ACCOUNT_LOGIN_REDIRECT_URL = "home"
+ACCOUNT_LOGIN_REDIRECT_URL = "/profile/"
 ACCOUNT_LOGOUT_REDIRECT_URL = "home"
-ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = True
+ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
+
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'calitocard@gmail.com'
+EMAIL_HOST_PASSWORD = 'Juandegaray2844'
+
 # LOGIN_URL = reverse_lazy("account_login_signup")
 # LOGIN_REDIRECT_URL = reverse_lazy("home")
+
+
+AUTH_PROFILE_MODULE = 'calo_social.profile.Profile'
 
 # # Social Auth
 
 # LOGIN_ERROR_URL = "/account/social/connections/"
 # Core Authentication Settings
-LOGIN_URL          = '/socialprofile/select/'
-LOGIN_REDIRECT_URL = '/secure/'
-LOGIN_ERROR_URL    = '/socialprofile/select/'
+LOGIN_REDIRECT_URL = reverse_lazy('home')
+LOGIN_URL = '/accounts/signin/'
+LOGOUT_URL = '/accounts/signout/'
 
 
 AUTHENTICATION_BACKENDS = [
 	"django.contrib.auth.backends.ModelBackend",
-    "account.auth_backends.UsernameAuthenticationBackend",
+    # "account.auth_backends.UsernameAuthenticationBackend",
     "social_auth.backends.twitter.TwitterBackend",
     "social_auth.backends.facebook.FacebookBackend",
     "social_auth.backends.google.GoogleOAuth2Backend",
 ]
 
 # Social Authentication (django-socialauth) Settings
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/secure/'
-SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/secure/'
-SOCIAL_AUTH_NEW_ASSOCIATION_REDIRECT_URL = '/secure/'
 
 
 SOCIAL_AUTH_ASSOCIATE_BY_MAIL = False

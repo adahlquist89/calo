@@ -1,0 +1,29 @@
+{% extends "site_base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% load bootstrap_tags %}
+
+{% block body %}
+<H1>{{ form.username.value }}{% trans "'s Profile" %}</H1>
+
+    <section title="profile" data-role="content">
+
+        <ul class="profile-block" data-role="listview" data-inset="true" data-theme="b">
+        	
+            <li>{{ form.username.label_tag }}{{ form.username.value|default:"&nbsp;" }}</li>
+
+            <li>{{ form.email.label_tag }}{{ form.email.value|default:"&nbsp;" }}</li>
+
+<!--             <li>{{ form.gender.label_tag }}{{ form.gender.value|title|default:"&nbsp;" }}</li>
+
+            <li>{{ form.url.label_tag }}&nbsp;
+                <div>{{ form.url.value|urlize }}</div>
+            </li>
+
+            <li>{{ form.description.label_tag }}{{ form.description.value|default:"&nbsp;" }}</li> -->
+
+        </ul>
+
+    </section>
+
+{% endblock %}
