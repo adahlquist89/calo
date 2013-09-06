@@ -19,6 +19,6 @@ urlpatterns = patterns('',
     url(r'^$', never_cache(ProfileView.as_view()), name="profile_view_page"),
 
     # Profile Other View
-    url(r'^view/(?P<username>\w+)/$', ProfileView.as_view(), name="profile_other_view_page"),
+    url(r'^view/(?P<username>(\w+)(\.)*(\w)*)/$', ProfileView.as_view(), name="profile_other_view_page"),
 
 )
