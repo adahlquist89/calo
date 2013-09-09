@@ -57,3 +57,46 @@ class ProfileView(FormView):
         initial_data.update({'returnTo': returnTo})
 
         return initial_data
+
+
+class ProfileEditView(UpdateView):
+    """
+    Profile Editing View
+
+    url: /profile/edit
+    """
+
+    template_name = 'profile/profile_edit.html'
+
+    form_class = ProfileForm
+
+    model = Profile
+
+    def get_object(self, queryset=None):
+        return Profile.objects.get(user=self.request.user) #Force get from current user for security
+
+    def get_initial(self):
+        """Load up the default data to show in the form."""
+        LOGGER.debug("profile.views.ProfileEditView.get_initial")
+
+        returnTo = self.request.GET.get('returnTo', DEFAULT_RETURNTO_PATH)
+        self.success_url = returnTo
+
+        initial_data = self.initial.copy() #Copy data loaded automatically to start with
+        initial_data.update(model_to_dict(self.request.user)) # Add current user data
+        initial_data.update({'returnTo': returnTo})
+
+        return initial_data
+
+    def form_valid(self, form):
+        """ Update OK """
+        messages.add_message(self.request, messages.INFO, _('Your profile has been updated.'))
+        self.success_url = form.cleaned_data.get('returnTo')
+        return super(ProfileEditView, self).form_valid(form)
+
+    def form_invalid(self, form):
+        """ Update KO """
+        messages.add_message(self.request, messages.INFO, _('Your profile has NOT been updated.'))
+        return super(ProfileEditView, self).form_invalid(form)
+
+

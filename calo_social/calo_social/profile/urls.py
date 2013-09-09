@@ -7,7 +7,7 @@
 
 from django.conf.urls import *  #@UnusedWildImport
 from django.contrib import admin
-from calo_social.profile.views import ProfileView
+from calo_social.profile.views import ProfileView, ProfileEditView
 from django.views.decorators.cache import never_cache
 from django.contrib.auth.decorators import login_required
 
@@ -20,5 +20,9 @@ urlpatterns = patterns('',
 
     # Profile Other View
     url(r'^view/(?P<username>(\w+)(\.)*(\w)*)/$', ProfileView.as_view(), name="profile_other_view_page"),
+
+    # Profile Edit
+    url(r'^edit/$', never_cache(login_required(ProfileEditView.as_view())), name="profile_edit_page"),
+
 
 )

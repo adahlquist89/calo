@@ -1,0 +1,40 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+{% load bootstrap_tags %}
+{% load profile_tags %}
+
+{% block head_title %}{% trans "Profile for " %}{{ user.username }}{% endblock %}
+
+
+{% block body %}
+    <section title="profile" data-role="content">
+        {% if user.social_profile.image_url %}
+            <img src="{{ user.social_profile.image_url }}"/>
+        {% endif %}
+        <form action="{%  url 'profile_edit_page' %}" method="post" id="profile-form" data-ajax="false">
+            {% csrf_token %}
+            <ul>
+                {{ form.as_bootstrap }}
+            </ul>
+        </form>
+        <h3 style="margin-left:10px;">{% trans "Social Connections" %}</h3>
+        {% if user.social_auth.all.count == 1 %}
+            {% with only_connection=user.social_auth.all|first %}
+                <p style="margin-left:20px;"><em>{{ only_connection.provider|social_provider_name }}
+                    {% trans "is your only means of authentication, it cannot be removed." %}</em></p>
+            {% endwith %}
+        {% else %}
+            <ul>
+                {% for user_social_auth in user.social_auth.all %}
+                    <a href="{% url socialauth_disconnect user_social_auth.provider %}"
+                       data-role="button">{% trans "Disconnect" %} {{ user_social_auth.provider|social_provider_name }}</a>
+                {% endfor %}
+            </ul>
+
+        {% endif %}
+
+        <br>
+        <br>
+        <br>
+    </section>
+{% endblock %}

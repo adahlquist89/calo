@@ -25,5 +25,5 @@ def prevent_duplicates(backend, uid, user=None, *args, **kwargs):
     return None
 
 
-def import_friends(backend, uid, user=None, *args, **kwargs):
-    ProcessSocialNetwork.delay(user_pk=user.pk, provider=backend.name)
+# def import_friends(backend, uid, user=None, *args, **kwargs):
+#     ProcessSocialNetwork.delay(user_pk=user.pk, provider=backend.name)

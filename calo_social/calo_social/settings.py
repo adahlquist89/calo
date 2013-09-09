@@ -100,7 +100,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "account.context_processors.account",
     "pinax_theme_bootstrap.context_processors.theme",
     "social_auth.context_processors.social_auth_by_name_backends",
-    "calo_social.friends.context_processors.suggestions"
+    # "calo_social.friends.context_processors.suggestions"
 ]
 
 
@@ -139,15 +139,14 @@ INSTALLED_APPS = [
     "account",
     "metron",
     "social_auth",
-    # "socialprofile",
     "djcelery",
+    # "friendship",
     # "south", #para manejar migraciones de db
     # "kaleo",
-    # "friendship",
-    
+   
     # project
     "calo_social",
-    "calo_social.friends",
+    "calo_social.friendship",
     "calo_social.profile",
 ]
 
@@ -242,7 +241,7 @@ SOCIAL_AUTH_PIPELINE = [
     "social_auth.backends.pipeline.social.load_extra_data",
     "social_auth.backends.pipeline.user.update_user_details",
     
-    "calo_social.pipeline.import_friends"
+    # "calo_social.pipeline.import_friends"
 ]
 
 GOOGLE_OAUTH2_CLIENT_ID = os.environ.get("GOOGLE_OAUTH2_CLIENT_ID", "111503697837.apps.googleusercontent.com")
